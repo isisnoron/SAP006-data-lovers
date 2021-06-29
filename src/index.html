@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header id="header">
+    <img src="img/logobranca.png" width="200px">
+    <nav id="nav">
+      <ul id="menu">
+        <li> <a href="index.html">INICIO</a> </li>
+        <li> <a href="sobre.html">SOBRE</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+   <section class="filters">
+    <select class="select" id="order">
+      <option selected disabled value="">Ordenar A-Z</option>
+      <option value="az" id="az">A - Z</option>
+      <option value="za" id="za">Z - A</option>
+    </select>
+
+    <select class="select" id="datas">
+      <option selected disabled value="">Data de lançamento</option>
+      <option value="Crescente">Crescente</option>
+      <option value="Decrescente">Decrescente</option>
+    </select>
+
+    <select class="select" id="genero">
+      <option selected disabled value="">Personagens</option>
+      <option value="todos">Todos</option>
+      <option value="feminino">Feminino</option>
+      <option value="masculino">Masculino</option>
+      <option value="animal">Animal</option>
+    </select>
+
+      </section>
+
+  <section class="filters">
+    <input type="text" id="search" placeholder="Pesquise por animações">
+  </section>
+
+  <section id="results" class="results"></section> 
+  <section class="cardArea" id="cardArea"></section>
+  <main>
+    <div id="card" class="movies-container"></div> 
+  </main>
+
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
