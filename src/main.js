@@ -10,41 +10,49 @@ console.log(orderGhibli)
 
 
 function printMovies(data) {
-  document.getElementById('card').innerHTML = data.map((film) => `
-  <div class="card">
-      <div class="front">
-      <div class="image" style="background-image: url(${film.poster})"></div>
-      <div class="text">
-      <h3 class="title">${film.title}</h3>
-      <h4 class="ano">${film.release_date} </h4>
-     </div> 
-    <div class="back">
-      <ul class="cardInfos">
-        <li><strong>Nome:</strong> ${film.title}</li>
-        <li><strong>Diretor: </strong>${film.director}</li>
-        <li><strong> Descrição:</strong> ${film.description}</li>
-      </ul>
-  </div>`)
+  document.getElementById('card').innerHTML = data.map((films) => `
+  <section class="container">
+      <div class="card-container">
+      <div class="card">
+          <figure class="front">
+            <img src="${films.poster}" class"img"> 
+            <div class="text">
+            <h3 class="title">${films.title}</h3>
+            <h4 class="ano">${films.release_date} </h4>
+          </figure> 
+        <figure class="back">
+          <ul class="cardInfos">
+            <li><strong>Nome:</strong> ${films.title}</li>
+            <li><strong>Diretor: </strong>${films.director}</li>
+            <li class="textBack"><strong> Descrição:</strong> ${films.description}</li>
+          </ul>
+        </figure>
+        </div>
+      </div>    
+  </section>`).join(" ")
 };
 
 printMovies(data.films)
 
 
 
-function ordenarAZ() {
-  const ordered = printMovies(sortAZ(data.films))
-  return ordered
-}
-const selectOrdenar = document.getElementById("order");
-selectOrdenar.addEventListener("change", ordenarAZ);
+var select = document.querySelector("select");
+select.addEventListener("change", ordenar); 
 
-function ordenarZA() {
-  const ordered2 = printMovies(sortZA(data.films))
-  return ordered2
+function ordenar() {
+  var orderValues = select.value;
 
+  if (orderValues === "az") {
+    const sortTitles = printMovies(sortAZ(data.films, orderValues));
+    console.log()
+    printMovies(sortTitles);
+
+  } else if (orderValues === "za") {
+    const sortTitles = printMovies(sortZA(data.films, orderValues));
+    printMovies(sortTitles);
+  }
 }
-const selectOrdenar2 = document.getElementById("za");
-selectOrdenar2.addEventListener("change", ordenarZA); 
+
 
 
 
