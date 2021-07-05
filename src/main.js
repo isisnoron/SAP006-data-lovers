@@ -21,6 +21,7 @@ function printMovies(data) {
           </figure> 
         <figure class="back">
           <ul class="cardInfos">
+
             <li><strong>Title:</strong> ${films.title}</li>
             <li><strong>Director: </strong>${films.director}</li>
             <li class="textBack"><strong>Description: </strong> ${films.description}</li>
@@ -30,12 +31,14 @@ function printMovies(data) {
       </div>    
   </section>`).join(" ")
   //evento.preventDefault();
+
 };
 
 printMovies(data.films);
 
 var select = document.querySelector("select");
 select.addEventListener("change", ordenar);
+
 
 function ordenar(e) {
   e.preventDefault()
@@ -47,11 +50,13 @@ function ordenar(e) {
     console.log()
     printMovies(sortTitles);
 
+
   } else if (orderValues === "za") {
     const sortTitles = printMovies(sortZA(data.films, orderValues));
     printMovies(sortTitles);
   }
 }
+
 
 //const personagens = data.films.map(filmes => filmes.people); //usei map para pegar todos os títulos
 //console.log(personagens)
@@ -76,9 +81,7 @@ function printCharacters(perso) {
             <li><strong>Eye color: </strong>${data.eye_color}</li>
             <li><strong>Hair color: </strong>${data.hair_color}</li>
             <li><strong>Gender: </strong>${data.gender}</li>
-            <li><strong>Specie: </strong>${data.specie}</li>
-            
-
+            <li><strong>Specie: </strong>${data.specie}</li>  
           </ul>
         </figure>
         </div> </div>
