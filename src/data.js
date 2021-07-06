@@ -10,6 +10,9 @@ console.log(people)
 export const filtrar = (arr, key, value) =>
   arr.filter((item) => item[key] === value);
 
+export const filtrarDiferente = (arr, key, value) =>
+  arr.filter((item) => item[key] !== value);
+
 /*export const orderGhibli = (database, condition) => {    //primeira tentativa ordenar
   if (!condition) return database;
 

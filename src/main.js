@@ -1,9 +1,5 @@
-import { sortAZ, sortZA, people, filtrar } from './data.js';
-
+import { sortAZ, sortZA, people, filtrar, filtrarDiferente } from './data.js';
 import data from './data/ghibli/ghibli.js';
-
-const personagens = data.films.filter(filmes => filmes.people); //usei map para pegar todos os títulos
-console.log(personagens)
 
 const cardCharacters = document.getElementById("cardCharacters")
 const card = document.getElementById("card")
@@ -29,7 +25,6 @@ function printMovies(data) {
         </div>
       </div>    
   </section>`).join(" ")
-  //evento.preventDefault();
 };
 
 printMovies(data.films);
@@ -86,8 +81,6 @@ function printCharacters(perso) {
   </section>`).join(" ")
 
 }
-printCharacters(people);
-
 
 function filterCharacter(f) {
   card.innerHTML = ""
@@ -97,13 +90,16 @@ function filterCharacter(f) {
   } else if (value === "Filters") {
     printCharacters(people);
   } else {
-    printCharacters(filtrar(people, "specie", value));
+    printCharacters(filtrarDiferente(people, "specie", "Human"));
   }
 }
 
 document.getElementById("genero").addEventListener("change", filterCharacter);
 
-//falta fazer pesquisa por busca 
+
+
+
+
 //const search = document.getElementById("search");
 
 //const animations = data.films.map(filmes => filmes.title); //usei map para pegar todos os títulos
@@ -118,17 +114,3 @@ document.getElementById("genero").addEventListener("change", filterCharacter);
   return ordenarAZ
 }*/
 
-
-/*function filtrar() {  // primeira tentativa de filtrar 
-  var orderValues2 = select.value;
-
-  if (orderValues2 === "feminino") {
-    const sortChars = printCharacters(filterData(data.films, orderValues2));
-    console.log()
-    printCharacters(sortChars);
-
-  } else if (orderValues2 === "masculino") {
-    const sortChars = printCharacters(filterData(data.films, orderValues2));
-    printCharacters(sortChars);
-  }
-}; */
