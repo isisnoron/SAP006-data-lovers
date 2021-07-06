@@ -1,5 +1,7 @@
 import { sortAZ, sortZA, people, filtrar, filtrarAnimal } from "./data.js";
 import data from "./data/ghibli/ghibli.js";
+import { sortAZ, sortZA, people, filtrar } from './data.js';
+import data from './data/ghibli/ghibli.js';
 
 const cardCharacters = document.getElementById("cardCharacters")
 const card = document.getElementById("card")
@@ -17,6 +19,7 @@ function printMovies(data) {
           </figure> 
         <figure class="back">
           <ul class="cardInfos">
+
             <li><strong>Title:</strong> ${films.title}</li>
             <li><strong>Director: </strong>${films.director}</li>
             <li class="textBack"><strong>Description: </strong> ${films.description}</li>
@@ -25,6 +28,7 @@ function printMovies(data) {
         </div>
       </div>    
   </section>`).join(" ")
+
 };
 
 printMovies(data.films);
@@ -33,8 +37,8 @@ const select = document.querySelector("select");
 select.addEventListener("change", ordenar);
 
 function ordenar() {
-  cardCharacters.innerHTML = ""
-  const orderValues = select.value;
+   cardCharacters.innerHTML = ""
+  var orderValues = select.value;
 
   if (orderValues === "az") {
     const sortTitles = printMovies(sortAZ(data.films, orderValues));
@@ -91,8 +95,6 @@ function filterCharacter(f) {
 
 document.getElementById("genero").addEventListener("change", filterCharacter);
 
-
-
 //const search = document.getElementById("search");
 
 //const animations = data.films.map(filmes => filmes.title); //usei map para pegar todos os títulos
@@ -106,4 +108,3 @@ document.getElementById("genero").addEventListener("change", filterCharacter);
   document.getElementById("ordenar").addEventListener("change", ordenarAZ)
   return ordenarAZ
 }*/
-
