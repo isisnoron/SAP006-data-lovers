@@ -1,11 +1,11 @@
-import { sortAZ, sortZA, people, filtrar, filtrarDiferente } from './data.js';
-import data from './data/ghibli/ghibli.js';
+import { sortAZ, sortZA, people, filtrar, filtrarAnimal } from "./data.js";
+import data from "./data/ghibli/ghibli.js";
 
 const cardCharacters = document.getElementById("cardCharacters")
 const card = document.getElementById("card")
 
 function printMovies(data) {
-  document.getElementById('card').innerHTML = data.map((films) => `
+  document.getElementById("card").innerHTML = data.map((films) => `
   <section class="container">
       <div class="card-container">
       <div class="card">
@@ -46,13 +46,10 @@ function ordenar() {
   }
 }
 
-//const personagens = data.films.map(filmes => filmes.people); //usei map para pegar todos os títulos
-//console.log(personagens)
-
 //Função para printar personagens e função filtrar
 
 function printCharacters(perso) {
-  document.getElementById('cardCharacters').innerHTML = perso.map((data) => `
+  document.getElementById("cardCharacters").innerHTML = perso.map((data) => `
   <section class="container">
       <div class="cardCharacters-container">
       <div class="cardCharacters">
@@ -88,14 +85,11 @@ function filterCharacter(f) {
   } else if (value === "Filters") {
     printCharacters(people);
   } else {
-    printCharacters(filtrarDiferente(people, "specie", "Human"));
+    printCharacters(filtrarAnimal(people, "specie", "Human"));
   }
 }
 
 document.getElementById("genero").addEventListener("change", filterCharacter);
-
-
-
 
 
 //const search = document.getElementById("search");

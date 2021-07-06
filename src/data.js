@@ -9,8 +9,10 @@ export const people = films.reduce((total, film) => total.concat(film.people), [
 export const filtrar = (arr, key, value) =>
   arr.filter((item) => item[key] === value);
 
-export const filtrarDiferente = (arr, key, value) =>
+export const filtrarAnimal = (arr, key, value) =>
   arr.filter((item) => item[key] !== value);
+
+
 
 /*export const orderGhibli = (database, condition) => {    //primeira tentativa ordenar
   if (!condition) return database;
@@ -27,26 +29,3 @@ export const filtrarDiferente = (arr, key, value) =>
     return orderAZ.reverse();
   }
 }*/
-
-
-
-
-/*export const genero = (data, condition) => {      //vídeo daniel, primeira tentativa filtragem
-  const fem = data.results.filter(results => results.gender == condition)
-  console.log(fem);
-    return fem;
-};*/
-
-/* respostaFem = []
-for (genero of gender) {
-if (genero === "Female") {
-respostaFem.push(genero)
-}}
-
-respostaMas = []
-for (genero of gender) {
-  if (genero === "Male")
-  respostaMas.push(genero)
-} */
-
-//resposta3 = films.filter(genero => genero === "Male" || genero === "Female" )
