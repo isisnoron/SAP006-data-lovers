@@ -92,6 +92,7 @@ function filterCharacter(f) {
 document.getElementById("genero").addEventListener("change", filterCharacter);
 
 
+
 //const search = document.getElementById("search");
 
 //const animations = data.films.map(filmes => filmes.title); //usei map para pegar todos os títulos
