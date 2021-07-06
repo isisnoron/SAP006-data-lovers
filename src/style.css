@@ -51,7 +51,7 @@
     border-radius: 50px;
     box-sizing: border-box;
     box-shadow: 2px 4px 4px rgba(161, 162, 247, 0.37);
-    background: #5757ee7c;
+    background: #87b7c6;
     margin-top: 18px;
 }
 
@@ -98,7 +98,6 @@
     height: 400px;
 }
 
-
 .characters-container{ /*chamando pela class do id "cardCharacters*/
     display: flex;
     flex-wrap: wrap;
@@ -135,6 +134,7 @@
     height: 450px;
 }
 
+
 .card{
     width: 100%;
     height: 100%;
@@ -164,38 +164,11 @@
     background: #ebad91;
 }
 
-.card{
-    width: 100%;
-    height: 100%;
-    transition: transform 1s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.card-container:hover .card{
-    transform: rotateY(180deg);
-}
-
-.card figure{
-    width: 250px;
-    height: 365px;
-    margin: 10px 25px;
-    position: absolute;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.card .front{
-    background: #ebad91;
-}
-
 
 .card .back{
     background: #ebad91;
     transform: rotateY(180deg);
 }
-
 
 .cardCharacters figure{
     width: 250px;
@@ -210,14 +183,13 @@
 }
 
 .cardCharacters .front{
-    background: #d5a9e0;    
+    background: #ebad91;    
 }
 
 .cardCharacters .back{
-    background: #d5a9e0;
+    background: #ebad91;
     transform: rotateY(180deg);
 }
-
 
 .cardInfos{
     list-style-type: none;
@@ -226,7 +198,6 @@
 
 .text{
     padding-top: 15px;
-    padding-top: 3px;
     text-align: center;
 }
 
@@ -237,7 +208,7 @@
     height: 100%;
 }  
 
-.textBackCharacter{
+  .textBackCharacter{
     padding: 15px 0px;
     text-align: justify;
     line-height: 25px;
@@ -246,14 +217,6 @@
 
 img{
     border-radius: 15px;
-    padding: 15px 0px;
-    text-align: center;
-    line-height: 12px;
-    height: 100%;
-}  
-
-img{
-    border-radius: 5px;
 }
 
 .title{
@@ -265,6 +228,22 @@ img{
     padding-bottom: 2px;
 }
 
+.calculos {
+    text-align: center;
+    line-height: 30px;
+    font-size: 3rem;
+    font-weight: 80;
+    border-top: 6px solid #1ca0d1;
+
+
+    padding: 0.5rem 0;
+}
+
+
+.calculos {
+text-align: center;
+line-height: 30px;
+font-weight: 80;
 
 .titulo {
     text-align: center;
@@ -275,80 +254,3 @@ img{
     padding: 0.5rem 0;
 }
 
-
-/*.card-container {
-    width: 215px;
-    height: 365px;
-    margin: 10px 25px;
-
-}
-
-
-.flip{
-    width: 215px;
-    height: 365px;
-    margin: 10px 25px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d
-}
-
-/*.flip:hover .flip{
-    transform: rotateY(175deg);
-}
-
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.front{
-    padding: 10px;
-    border-radius: 20px;
-    background: #f09f88;
-    box-shadow: 10px 7px 20px rgba(117, 4, 61, 0.39);
-}
-.back{
-    padding: 10px;
-    border-radius: 20px;
-    background: #f09f88;
-    box-shadow: 10px 7px 20px rgba(117, 4, 61, 0.39);
-    transform: rotateY(180deg);
-}
-
-.image{
-    width: 100%;
-    height:285px;
-    border-radius: 20px;
-    background-size: cover;
-}
-
-
-.text{
-    padding-top: 3px;
-    text-align: center;
-    text-justify: center;
-    
-}
-.textBack{
-    padding: 15px 0px;
-    text-align: center;
-    line-height: 12px;
-    background-color:rgba(238, 243, 243, 0.1);
-    border-radius: 35px;
-    height: 100%;
-}     
-.title{
-    font-size: 16px;
-    font-weight: bold;
-    color: #250314;
-    padding-bottom: 3px;
-}
-.ano{
-    font-size: 14px;
-    font-weight: lighter;
-    font-style: italic;
-    color: #250314;
-    padding-bottom: 3px;
-}
