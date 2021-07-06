@@ -29,17 +29,15 @@ function printMovies(data) {
 
 printMovies(data.films);
 
-var select = document.querySelector("select");
+const select = document.querySelector("select");
 select.addEventListener("change", ordenar);
 
-function ordenar(e) {
-  e.preventDefault()
+function ordenar() {
   cardCharacters.innerHTML = ""
-  var orderValues = select.value;
+  const orderValues = select.value;
 
   if (orderValues === "az") {
     const sortTitles = printMovies(sortAZ(data.films, orderValues));
-    console.log()
     printMovies(sortTitles);
 
   } else if (orderValues === "za") {

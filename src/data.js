@@ -5,7 +5,6 @@ export const sortZA = (data) => sortAZ(data).reverse();
 
 export const films = data.films;
 export const people = films.reduce((total, film) => total.concat(film.people), []);
-console.log(people)
 
 export const filtrar = (arr, key, value) =>
   arr.filter((item) => item[key] === value);

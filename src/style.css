@@ -51,7 +51,7 @@
     border-radius: 50px;
     box-sizing: border-box;
     box-shadow: 2px 4px 4px rgba(161, 162, 247, 0.37);
-    background: #5757ee7c;
+    background: #87b7c6;
     margin-top: 18px;
 }
 
@@ -181,11 +181,11 @@
 }
 
 .cardCharacters .front{
-    background: #d5a9e0;    
+    background: #ebad91;    
 }
 
 .cardCharacters .back{
-    background: #d5a9e0;
+    background: #ebad91;
     transform: rotateY(180deg);
 }
 
