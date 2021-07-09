@@ -6,26 +6,13 @@ export const sortZA = (data) => sortAZ(data).reverse();
 export const films = data.films;
 export const people = films.reduce((total, film) => total.concat(film.people), []);
 
+
 export const filtrar = (arr, key, value) =>
   arr.filter((item) => item[key] === value);
 
 export const filtrarAnimal = (arr, key, value) =>
   arr.filter((item) => item[key] !== value);
 
-
-
-/*export const orderGhibli = (database, condition) => {    //primeira tentativa ordenar
-  if (!condition) return database;
-
-  if (condition === "az" || condition === "za") {
-    const orderAZ = database.sort(function (a, b) {
-      if (a.title < b.title) return -1;
-      if (a.title > b.title) return 1;
-      return 0;
-    });
-
-    if (condition === "az") return orderAZ;
-
-    return orderAZ.reverse();
+export const computeGender = (gender) => {
+    return Math.round(gender.length * 100 /people.length) 
   }
-}*/
