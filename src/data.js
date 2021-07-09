@@ -13,5 +13,6 @@ export const filtrar = (arr, key, value) =>
 export const filtrarAnimal = (arr, key, value) =>
   arr.filter((item) => item[key] !== value);
 
-
-
+export const computeGender = (gender) => {
+    return Math.round(gender.length * 100 /people.length) 
+  }
