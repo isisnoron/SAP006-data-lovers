@@ -1,18 +1,18 @@
+
+@font-face {
+        font-family: poppins;
+        src: url(poppins.woff);
+    }
 *{ 
+    font-family: poppins;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    @font-face {
-        font-family: 'Poppins' ;
-        src: url('Poppins.ttf') format ('treutype');
-        font-style: normal;
 }
-}
-
 
 #header{
     box-sizing: border-box; 
-    height: 120px; 
+    height: 150px; 
     padding: 2rem; 
     display: flex;   
     align-items: center;
@@ -28,17 +28,92 @@
 }
 
 #menu a{
-    padding: 5rem;
+    padding: .5rem;
     text-decoration: none;
     color: rgb(235, 235, 235);
+    font-size: 20px;
+}
+
+#btn-mobile{
+    display: none;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 600px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        top: 140px;
+        right: 0px;
+        background:#1ca0d1;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+
+    }
+    #nav.active #menu{
+        height: 40vh; /*ate onde o menu desce na página*/
+        visibility: visible;
+    }
+    #menu a{
+        padding: 3rem 0;
+        margin: 0 5rem;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        color: whitesmoke;
+    } 
+    #hamburguer::after , #hamburguer::before{
+        content: '' ;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;        
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
 
 .filters{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
+}
+@media screen and (max-width: 600px) { /*responsivo dos botões*/
+    .filters{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 
 
@@ -55,47 +130,11 @@
     margin-top: 18px;
 }
 
-.input{
-    display: flex;
-    width: 220px;
-    height: 30px;
-    font-size: 15px;
-    color: #000000;
-    background: #f0e7e7;
-    border: 2px solid #939296;
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin-top: 15px;
-    margin-bottom: 1px;
-    text-align: center;
-    align-items: center;
-
-}
-
-.results{
-    height: 6vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    font-size: 14px;
-    line-height: 1em;
-    color: #52105f;
-    font-weight: 500;}
-
-
 .movies-container{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-}
-
-.card-container{
-    width: 300px;
-    height: 400px;
 }
 
 .characters-container{ /*chamando pela class do id "cardCharacters*/
@@ -104,11 +143,19 @@
     justify-content: center;
 
 }
+@media screen and (max-width: 600px){
+    .movies-container , .characters-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
     
 .cardCharacters-container{
     width: 300px;
     height: 400px;
 }
+
 
 .cardCharacters{
     width: 100%;
@@ -121,13 +168,6 @@
     transform: rotateY(180deg);
 }
     
-
-.movies-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
 
 .card-container{
     width: 400px;
@@ -193,6 +233,7 @@
 .cardInfos{
     list-style-type: none;
     text-align: center;
+    font-size: 13px;
 }
 
 .text{
@@ -205,6 +246,7 @@
     text-align: justify;
     line-height: 15px;
     height: 100%;
+    font-size: 13px;
 }  
 
   .textBackCharacter{
@@ -246,3 +288,38 @@ img{
     font-size: 1rem;
     z-index: 1;
 }
+
+footer {
+    background-color: #1ca0d1;
+    color: black;
+    font-size: 0.7em;
+    padding: 1em 0;
+    text-align: center;
+    grid-area: "footer";
+    grid-column: footer;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.contato {
+    margin: 1em auto 0;
+    max-width: 80vw;
+    text-align: center;
+}
+
+.contato-aluna {
+    margin-bottom: 1em;
+}
+
+.contato .nome-aluna {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.contato-aluna a {
+    font-size: 1.3em;
+}
+
