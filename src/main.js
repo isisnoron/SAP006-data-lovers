@@ -1,4 +1,4 @@
-import { sortAZ, sortZA, people, filtrar, filtrarAnimal, computeGender} from "./data.js";
+import { sortAZ, sortZA, people, filtrar, filtrarAnimal, computeGender } from "./data.js";
 import data from "./data/ghibli/ghibli.js";
 
 const cardCharacters = document.getElementById("cardCharacters")
@@ -27,7 +27,7 @@ function printMovies(data) {
       </div>    
   </section>`).join(" ")
 
-};
+}
 
 printMovies(data.films);
 
@@ -35,7 +35,7 @@ const select = document.querySelector("select");
 select.addEventListener("change", ordenar);
 
 function ordenar() {
-   cardCharacters.innerHTML = ""
+  cardCharacters.innerHTML = ""
   var orderValues = select.value;
 
   if (orderValues === "az") {
@@ -76,7 +76,6 @@ function printCharacters(perso) {
         </div> </div>
       </div>    
   </section>`).join(" ")
-
 }
 
 function filterCharacter(f) {
@@ -84,18 +83,16 @@ function filterCharacter(f) {
   const calculos = document.getElementById("calculation")
   const value = f.target.value;
   if (value === "Male" || value === "Female") {
-    printCharacters(filtrar(people, "gender", value)); 
-      calculos.innerHTML = `A porcentagem de personagens é ${computeGender(filtrar(people, "gender", value))} %`    
+    printCharacters(filtrar(people, "gender", value));
+    calculos.innerHTML = `A porcentagem de personagens é ${computeGender(filtrar(people, "gender", value))} %`
   } else if (value === "Filters") {
-    calculos.innerHTML= ""
+    calculos.innerHTML = ""
     printCharacters(people);
     calculos.innerHTML = `Lista com todos os personagens`
   } else {
-    calculos.innerHTML=""
+    calculos.innerHTML = ""
     printCharacters(filtrarAnimal(people, "specie", "Human"));
-    calculos.innerHTML = `A porcentagem de animais é ${computeGender(filtrarAnimal(people, "specie", "Human"))} %`
-}
+    calculos.innerHTML = `A porcentagem de outros personagens é ${computeGender(filtrarAnimal(people, "specie", "Human"))} %`
+  }
 }
 document.getElementById("genero").addEventListener("change", filterCharacter);
-
-
