@@ -12,32 +12,35 @@
   <header id="header">
     <img src="img/logobranca.png" width="200px">
     <nav id="nav">
+    <button id="btn-mobile">Menu
+      <span id="hamburguer"></span>
+    </button>
       <ul id="menu">
-        <li> <a href="index.html">INICIO</a> </li>
-        <li> <a href="sobre.html">SOBRE</a> </li>
+        <li> <a href="index.html">Início</a> </li>
+        <li> <a href="sobre.html">Sobre</a> </li>
       </ul>
     </nav>
   </header>
 
   <section class="filters">
     <select class="select" id="order">
-      <option selected disabled value="">Ordenar A-Z</option>
+      <option selected disabled value="">Ordenar</option>
       <option value="az" id="az">A - Z</option>
       <option value="za" id="za">Z - A</option>
     </select>
 
-    <select class="select" id="datas">
+    <!--<select class="select" id="datas">
       <option selected disabled value="">Data de lançamento</option>
       <option value="Crescente">Crescente</option>
       <option value="Decrescente">Decrescente</option>
-    </select>
+    </select>-->
 
     <select class="select" id="genero">
       <option selected disabled value="">Personagens</option>
       <option value="Filters">Todos os Personagens</option> 
       <option value="Female">Feminino</option>
       <option value="Male">Masculino</option>
-      <option value="specie">Animal</option>
+      <option value="specie">Outros</option>
 
     </select>
 
@@ -61,10 +64,23 @@
     <div id="cardCharacters" class="characters-container"></div>
 
   </main>
-
+  <footer>
+    <h2 class="footer">Projeto realizado durante o <a href="http://www.laboratoria.la/br" target="_blank">Bootcamp Laboratória</a>.</h2>
+      <h2>Nos encontre aqui:</h2>
+      <div class="contato">
+        <div class="contato-aluna">
+          <p class="nome-aluna">Isis Beatriz Noronha </p>
+          <a href="https://github.com/isisnoron" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/isisnoron/" target="_blank">LinkedIn</a>
+      </div>
+          <div class="contato-aluna">
+              <p class="nome-aluna">Mayara Brayner</p>
+              <a href="https://github.com/mayarabezerra" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mayara-brayner-9a5341179/" target="_blank">LinkedIn</a>
+          </div>
+      </div>
+  </footer>
 
   <div id="root"></div>
-  <script src="main.js" type="module"></script>
-</body>
+    <script src="main.js" type="module"></script>
+  </body>
 
-</html>
+  </html>
