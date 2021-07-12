@@ -93,6 +93,15 @@ function filterCharacter(f) {
     calculos.innerHTML = ""
     printCharacters(filtrarAnimal(people, "specie", "Human"));
     calculos.innerHTML = `A porcentagem de outros personagens é ${computeGender(filtrarAnimal(people, "specie", "Human"))} %`
-  }
+}
 }
 document.getElementById("genero").addEventListener("change", filterCharacter);
+
+
+const btnMobile = document.getElementById("btn-mobile");
+function toggleMenu(){
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active")
+}
+btnMobile.addEventListener('click', toggleMenu);
+
