@@ -3,103 +3,104 @@
     src: url(poppins.woff);
 }
 *{ 
-font-family: poppins;
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
-}
-
-#header{
-box-sizing: border-box; 
-height: 150px; 
-padding: 2rem; 
-display: flex;   
-align-items: center;
-justify-content: space-between;
-background: #1ca0d1;
-
-}
-
-#menu{
-display: flex;
-list-style: none;
-gap: .3rem; 
-}
-
-#menu a{
-padding: .5rem;
-text-decoration: none;
-color: rgb(235, 235, 235);
-font-size: 20px;
-}
-
-#btn-mobile{
-display: none;
-color: whitesmoke;
-}
-
-@media screen and (max-width: 600px){
-#menu{
-    display: flex;
-    flex-direction: column;
+    font-family: poppins;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    
+    #header{
+    box-sizing: border-box; 
+    height: 150px; 
+    padding: 2rem; 
+    display: flex;   
     align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    width: 100%;
-    top: 140px;
-    right: 0px;
-    background:#1ca0d1;
-    transition: .6s;
-    z-index: 1000;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-
-}
-#nav.active #menu{
-    height: 40vh; /*ate onde o menu desce na página*/
-    visibility: visible;
-}
-#menu a{
-    padding: 3rem 0;
-    margin: 0 5rem;
-}
-#btn-mobile{
+    justify-content: space-between;
+    background: #1ca0d1;
+    
+    }
+    
+    #menu {
     display: flex;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: .5rem;
-}
-#hamburguer{
+    list-style: none;
+    gap: .3rem; 
+    }
+    
+    #menu a{
+    padding: .5rem;
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    font-size: 20px;
     display: block;
-    border-top: 2px solid;
-    width: 20px;
+    }
+    
+    #btn-mobile-sobre{
+    display: none;
     color: whitesmoke;
-} 
-#hamburguer::after , #hamburguer::before{
-    content: '' ;
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    transition: .3s;
-    position: relative;
+    }
+    
+ @media screen and (max-width: 600px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        top: 140px;
+        right: 0px;
+        background:#1ca0d1;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }    
+    #nav-sobre.active #menu{
+        height: 40vh; /*ate onde o menu desce na página*/
+        visibility: visible;
+    }
+    #menu a{
+        padding: 3rem 0;
+        margin: 0 5rem;
+    }
+    #btn-mobile-sobre{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer-sobre{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        color: whitesmoke;
+    }
+    #hamburguer-sobre::after , #hamburguer-sobre::before{
+        content: '' ;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav-sobre.active #hamburguer-sobre{
+        border-top-color: transparent;        
+    }
+    #nav-sobre.active #hamburguer-sobre::before{
+        transform: rotate(135deg);
+    }
+    #nav-sobre.active #hamburguer-sobre::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
-#nav.active #hamburguer{
-    border-top-color: transparent;        
-}
-#nav.active #hamburguer::before{
-    transform: rotate(135deg);
-}
-#nav.active #hamburguer::after{
-    transform: rotate(-135deg);
-    top: -7px;
-}
-}
+
 
 body{
     background: white;
