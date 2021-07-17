@@ -1,4 +1,3 @@
-
 *{ 
     font-family: poppins;
     margin: 0;
@@ -191,6 +190,13 @@
     font-size: 13px;
 }  
 
+.textBackCharacter{
+    padding: 100px 0px;
+    text-align: justify;
+    line-height: 25px;
+    height: 300%;
+}  
+
 img{ /*imagem do card*/
     border-radius: 15px;
 }
@@ -307,6 +313,7 @@ footer a {
     text-align: justify;
     line-height: 25px;
     height: 300%;
+
 } 
 .text-charac{
     padding-top: 15px;
@@ -319,3 +326,18 @@ footer a {
     height: 100%;
     font-size: 13px;
 }
+
+
+.searchAnimations {
+    width: 220px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    color:#48484bd5;
+    border: 2px solid #828ed18e;
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px rgba(161, 162, 247, 0.37);
+    margin-top: 18px;
+    outline: none;  
+}
+

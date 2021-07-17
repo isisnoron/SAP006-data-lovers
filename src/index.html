@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-
-</head>
-
-<body id="body">
-  <header id="header">
-    <img src="img/logobranca.png" class= "logo" width="200px">
-    <nav id="nav">
-    <button id="btn-mobile">
-      <span id="hamburguer"></span>
-    </button>
-      <ul class="menu">
-        <li> <a href="index.html">Início</a> </li>
-        <li> <a href="sobre.html">Sobre</a> </li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  
+  </head>
+  
+  <body id="body">
+    <header id="header">
+      <img src="img/logobranca.png" class= "logo" width="200px">
+      <nav id="nav">
+      <button id="btn-mobile">
+        <span id="hamburguer"></span>
+      </button>
+        <ul class="menu">
+          <li> <a href="index.html">Início</a> </li>
+          <li> <a href="sobre.html">Sobre</a> </li>
+        </ul>
+      </nav>
+    </header>
 
   <section class="filters">
+    <input class="searchAnimations" type="text" id="search" placeholder="Pesquise por animações">
+
     <select class="select" id="order">
       <option selected disabled value="">Animations</option>
       <option value="az" id="az">A - Z</option>
       <option value="za" id="za">Z - A</option>
     </select>
 
-    <!--<select class="select" id="datas">
+   <!--  <select class="select" id="datas">
       <option selected disabled value="">Data de lançamento</option>
       <option value="Crescente">Crescente</option>
       <option value="Decrescente">Decrescente</option>
     </select>-->
+    
 
     <select class="select" id="genero">
       <option selected disabled value="">Characters</option>
@@ -47,9 +50,7 @@
 
   </section>
 
-  <section class="filters">
-    <!-- <input type="text" id="search" placeholder="Pesquise por animações"> -->
-  </section>
+  
   <section class="percentage-calculation">
     <div class="percentage" id="calculation"></div>
   </section>
@@ -59,6 +60,7 @@
     <div id="cardCharac" class="movies-container"></div>
   </main>
   <footer>
+
     <h2 class="footer">Projeto realizado durante o <a href="http://www.laboratoria.la/br" target="_blank">Bootcamp Laboratória</a>.</h2>
       <h2>Nos encontre aqui:</h2>
       <div class="contato">
@@ -75,6 +77,7 @@
 
   <div id="root"></div>
     <script src="main.js" type="module"></script>
+    <script src="sobre.js" type="module"></script>
   </body>
 
   </html>
