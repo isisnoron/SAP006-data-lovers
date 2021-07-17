@@ -7,7 +7,6 @@ const card = document.getElementById("card")
 function printMovies(data) {
   document.getElementById("card").innerHTML = data.map((films) => `
   <section class="container">
-      <div class="card-container">
       <div class="card">
           <figure class="front">
             <img src="${films.poster}" class"img"> 
@@ -17,13 +16,11 @@ function printMovies(data) {
           </figure> 
         <figure class="back">
           <ul class="cardInfos">
-
             <li><strong>Title:</strong> ${films.title}</li>
             <li><strong>Director: </strong>${films.director}</li>
             <li class="textBack"><strong>Description: </strong> ${films.description}</li>
           </ul>
         </figure>
-        </div>
       </div>    
   </section>`).join(" ")
 
@@ -52,11 +49,10 @@ function ordenar() {
 
 function printCharacters(perso) {
   document.getElementById("cardCharacters").innerHTML = perso.map((data) => `
-  <section class="container">
-      <div class="cardCharacters-container">
+  <section class="characters-container">
       <div class="cardCharacters">
           <figure class="front">
-            <img src="${data.img}" class"img"> 
+            <img src="${data.img}" class="img"> 
             <div class="text">
             <h3 class="title">${data.name}</h3>
             </figure> 
@@ -69,11 +65,8 @@ function printCharacters(perso) {
             <li><strong>Hair color: </strong>${data.hair_color}</li>
             <li><strong>Gender: </strong>${data.gender}</li>
             <li><strong>Specie: </strong>${data.specie}</li>
-            
-
           </ul>
-        </figure>
-        </div> </div>
+        </figure> 
       </div>    
   </section>`).join(" ")
 }
