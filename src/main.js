@@ -1,7 +1,7 @@
 import { sortAZ, sortZA, people, filtrar, filtrarAnimal, computeGender, filterMovies } from "./data.js";
 import data from "./data/ghibli/ghibli.js";
 
-const cardCharacters = document.getElementById("cardCharacters")
+const cardCharacters = document.getElementById("cardCharac")
 const card = document.getElementById("card")
 const characters = people(data.films)
 const calculation = document.getElementById("calculation")
@@ -12,7 +12,7 @@ function printMovies(data) {
   <section class="container">
       <div class="card">
           <figure class="front">
-            <img src="${films.poster}" class"img"> 
+            <img src="${films.poster}" class="img"> 
             <div class="text">
             <h3 class="title">${films.title}</h3>
             <h7 class="ano"><i>Release date: ${films.release_date} </i></h7>
@@ -51,24 +51,23 @@ function ordenar() {
 //Função para printar personagens e função filtrar
 
 function printCharacters(perso) {
-  document.getElementById("cardCharacters").innerHTML = perso.map((data) => `
-  <section class="containerSegundo">
-      <div class="cardCharacters">
-          <figure class="front">
+  document.getElementById("cardCharac").innerHTML = perso.map((data) => `
+  <section class="container-pai">
+        <div class="container-charac">
+          <figure class="front-charac">
             <img src="${data.img}" class="img"> 
-            <div class="text">
-            <h3 class="title">${data.name}</h3>
-            </figure> 
-          <figure class="back">
-          <ul class="cardInfos">
-          <div class="textBackCharacter">
-            <li><strong>Movie: </strong>${data.movie}</li>
-            <li><strong>Name: </strong> ${data.name}</li>
-            <li><strong>Age: </strong>${data.age}</li>
-            <li><strong>Eye color: </strong>${data.eye_color}</li>
-            <li><strong>Hair color: </strong>${data.hair_color}</li>
-            <li><strong>Gender: </strong>${data.gender}</li>
-            <li><strong>Specie: </strong>${data.specie}</li>
+            <div class="text-charac">
+            <h3 class="title-charac">${data.name}</h3>
+          </figure> 
+        <figure class="back-charac">
+          <ul class="textBackCharacter">
+              <strong>Name: </strong> ${data.name} <br>
+              <strong>Age: </strong>${data.age}<br>
+              <strong>Eye color: </strong>${data.eye_color}<br>
+              <strong>Hair color: </strong>${data.hair_color}<br>
+              <strong>Gender: </strong>${data.gender}<br>
+              <strong>Specie: </strong>${data.specie}<br>
+              <strong>Movie: </strong>${data.movie}
           </ul>
         </figure> 
       </div>    

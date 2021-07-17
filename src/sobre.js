@@ -1,7 +1,6 @@
-const btnSobre = document.getElementById("btn-mobile-sobre");
-function toggleMenu () {
-  const nav = document.getElementById("nav-sobre");
-  nav.classList.toggle('active');
+const btnMobile = document.getElementById("btn-mobile");
+function toggleMenu(){
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active")
 }
-
-btnSobre.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('click', toggleMenu);

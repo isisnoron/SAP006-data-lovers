@@ -125,7 +125,7 @@
     margin-top: 18px;
 }
 /*cards e flip animações*/
-.movies-container{ /*seguindo em linhas e quebra*/
+.movies-container{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -135,7 +135,7 @@
     width: 350px;
     height: 425px;
     margin-left: 5%;
-  }  
+}  
 
 .card{ /*juntando os cards e transformação*/
     width: 100%;
@@ -188,6 +188,13 @@
     line-height: 15px;
     height: 100%;
     font-size: 13px;
+}  
+
+.textBackCharacter{
+    padding: 100px 0px;
+    text-align: justify;
+    line-height: 25px;
+    height: 300%;
 }  
 
 img{ /*imagem do card*/
@@ -267,35 +274,25 @@ footer a {
     font-size: 1.3em;
 }
 
+/*cards persoangens e flip*/
 
-
-/* acrescimo novas alterações isis 
-.characters-container{ 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.containerSegundo{
+.container-pai{
     width: 350px;
-    height: 425px;
-    margin-left: 5%;
-  }  
-
-  .cardCharacters{ 
+    height: 450px;
+    margin-left: 7%;
+}
+.container-charac{
     width: 100%;
     height: 100%;
     transition: transform 1s ease-in-out;
     transform-style: preserve-3d;
 }
-
-.cardCharacters:hover {
+.container-charac:hover { 
     transform: rotateY(180deg);
 }
-
-.cardCharacters , figure{ 
-    width: 290px;
-    height: 400px;
+.container-charac , .front-charac , .back-charac{ 
+    width: 270px;
+    height: 350px;
     position: absolute;
     border-radius: 20px;
     display: flex;
@@ -303,20 +300,32 @@ footer a {
     align-items: center;
     flex-direction: column;
 }
-
-
-.cardCharacters .front{ 
-    box-shadow: 5px 7px 20px rgba(224, 71, 147, 0.219); 
+.container-charac .front-charac {
     background: #ebad91;
 }
 
-.cardCharacters .back{ 
+.container-charac .back-charac{
     background: #ebad91;
     transform: rotateY(180deg);
 }
-
-
- ^ acrescimo acima ^ novas alterações isis ^ */
+.cardInfos-charac{
+    padding: 15px 0px;
+    text-align: justify;
+    line-height: 25px;
+    height: 300%;
+    
+} 
+.text-charac{
+    padding-top: 15px;
+    text-align: center;
+}
+.back-charac{
+    padding: 15px 15px;
+    text-align: justify;
+    line-height: 15px;
+    height: 100%;
+    font-size: 13px;
+}
 
 .searchAnimations {
     width: 220px;
