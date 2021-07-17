@@ -615,7 +615,7 @@ export default {
           "id": "c8f02850-0c1f-499c-8b5e-d8ad16f3ecc4",
           "name": "Yaeko Okajima",
           "gender": "Female",
-          "img": "https://cdn.myanimelist.net/r/360x360/images/characters/2/218427.jpg?s=293154bbd58f0617e778d715bc19ab2d",
+          "img": "",
           "age": "16",
           "eye_color": "Black",
           "hair_color": "Grey",
