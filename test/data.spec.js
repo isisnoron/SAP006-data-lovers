@@ -87,23 +87,7 @@ describe('filtrar', () => {
         { "name": "Yubaba", "gender": "Female", "specie": "Witch" }]);
     })
   });
-
-  /*describe('computeGender', () =>{
-    const personagens = [
-      { "name": "Satsuki Kusakabe", "gender": "Female"},
-      { "name": "Tatsuo Kusakabe", "gender": "Male"},
-      { "name": "Totoro", "gender": "Male"},
-      { "name": "Pazu", "gender": "Male"},
-    ]
-    it ('is a function', ()=> {
-      expect(typeof computeGender).toBe('function');
-    });
-       it ('returns ``' , () => {
-        const computerPerso = computeGender(personagens)
-        const result = 2
-      expect (computerPerso).toEqual(result)
-      })
-  })*/
+  
 
   describe ('computeGender' , () => {
     it ('its a function', () => {

@@ -1,7 +1,7 @@
 import { sortAZ, sortZA, people, filtrar, filtrarAnimal, computeGender } from "./data.js";
 import data from "./data/ghibli/ghibli.js";
 
-const cardCharacters = document.getElementById("cardCharacters")
+const cardCharacters = document.getElementById("cardCharac")
 const card = document.getElementById("card")
 
 function printMovies(data) {
@@ -9,7 +9,7 @@ function printMovies(data) {
   <section class="container">
       <div class="card">
           <figure class="front">
-            <img src="${films.poster}" class"img"> 
+            <img src="${films.poster}" class="img"> 
             <div class="text">
             <h3 class="title">${films.title}</h3>
             <h4 class="ano">${films.release_date} </h4>
@@ -48,23 +48,22 @@ function ordenar() {
 //Função para printar personagens e função filtrar
 
 function printCharacters(perso) {
-  document.getElementById("cardCharacters").innerHTML = perso.map((data) => `
-  <section class="characters-container">
-      <div class="cardCharacters">
-          <figure class="front">
+  document.getElementById("cardCharac").innerHTML = perso.map((data) => `
+  <section class="container-pai">
+        <div class="container-charac">
+          <figure class="front-charac">
             <img src="${data.img}" class="img"> 
-            <div class="text">
-            <h3 class="title">${data.name}</h3>
-            </figure> 
-        <figure class="back">
+            <div class="text-charac">
+            <h3 class="title-charac">${data.name}</h3>
+          </figure> 
+        <figure class="back-charac">
           <ul class="cardInfos">
-          <div class="textBackCharacter">
-            <li><strong>Name: </strong> ${data.name}</li>
-            <li><strong>Age: </strong>${data.age}</li>
-            <li><strong>Eye color: </strong>${data.eye_color}</li>
-            <li><strong>Hair color: </strong>${data.hair_color}</li>
-            <li><strong>Gender: </strong>${data.gender}</li>
-            <li><strong>Specie: </strong>${data.specie}</li>
+              <li><strong>Name: </strong> ${data.name}</li>
+              <li><strong>Age: </strong>${data.age}</li>
+              <li><strong>Eye color: </strong>${data.eye_color}</li>
+              <li><strong>Hair color: </strong>${data.hair_color}</li>
+              <li><strong>Gender: </strong>${data.gender}</li>
+              <li><strong>Specie: </strong>${data.specie}</li>
           </ul>
         </figure> 
       </div>    
