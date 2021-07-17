@@ -116,8 +116,22 @@
     }
 }
 
+.searchAnimations {
+    width: 220px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    color:#48484bd5;
+    border: 2px solid #828ed18e;
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px rgba(161, 162, 247, 0.37);
+    margin-top: 18px;
+    outline: none;  
+}
 
-.select{
+
+
+.select{    
     width: 170px;
     height: 30px;
     font-size: 15px;
@@ -141,6 +155,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 
 }
 @media screen and (max-width: 600px){
