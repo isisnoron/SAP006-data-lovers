@@ -89,7 +89,8 @@ describe('filtrar', () => {
   });
   
 
- describe ('computeGender' , () => {
+
+  describe ('coputeGender' , () => {
     it ('its a function', () => {
       expect (typeof computeGender).toBe('function');
     });
