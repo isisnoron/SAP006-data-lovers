@@ -10,7 +10,6 @@ function printMovies(data) {
 
   document.getElementById("card").innerHTML = data.map((films) => `
   <section class="container">
-      <div class="card-container">
       <div class="card">
           <figure class="front">
             <img src="${films.poster}" class"img"> 
@@ -23,11 +22,9 @@ function printMovies(data) {
            <li><strong>Score:</strong> ${films.rt_score}</li>
             <li><strong>Director: </strong>${films.director}</li>
             <li><strong>Producer: </strong>${films.producer}</li>
-            
             <li class="textBack"><strong>Description: </strong> ${films.description}</li>
           </ul>
         </figure>
-        </div>
       </div>    
   </section>`).join(" ")
 
@@ -55,11 +52,10 @@ function ordenar() {
 
 function printCharacters(perso) {
   document.getElementById("cardCharacters").innerHTML = perso.map((data) => `
-  <section class="container">
-      <div class="cardCharacters-container">
+  <section class="containerSegundo">
       <div class="cardCharacters">
           <figure class="front">
-            <img src="${data.img}" class"img"> 
+            <img src="${data.img}" class="img"> 
             <div class="text">
             <h3 class="title">${data.name}</h3>
             </figure> 
@@ -73,11 +69,8 @@ function printCharacters(perso) {
             <li><strong>Hair color: </strong>${data.hair_color}</li>
             <li><strong>Gender: </strong>${data.gender}</li>
             <li><strong>Specie: </strong>${data.specie}</li>
-            
-
           </ul>
-        </figure>
-        </div> </div>
+        </figure> 
       </div>    
   </section>`).join(" ")
 }
@@ -103,17 +96,17 @@ function filterCharacter(f) {
 }
 document.getElementById("genero").addEventListener("change", filterCharacter);
 
+/*const btnMobile = document.getElementById("btn-mobile");
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active")
+}
+btnMobile.addEventListener('click', toggleMenu);*/
 
+// filtro barra de pesquisa das animações
 let search = document.getElementById("search");
 search.addEventListener("keyup", function () {
   let movieSelected = filterMovies(data.films, search.value.toUpperCase())
   printMovies(movieSelected)
 })
 
-
-const btnMobile = document.getElementById("btn-mobile");
-function toggleMenu() {
-  const nav = document.getElementById("nav");
-  nav.classList.toggle("active")
-}
-btnMobile.addEventListener('click', toggleMenu);

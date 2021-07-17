@@ -1,4 +1,4 @@
-import { sortAZ, sortZA, filtrar, filtrarAnimal, /*computeGender*/ } from '../src/data.js';
+import { sortAZ, sortZA, filtrar, filtrarAnimal, computeGender } from '../src/data.js';
 
 
 const films = [
@@ -19,6 +19,12 @@ const characters = [
   { "name": "Yubaba", "gender": "Female", "specie": "Witch" },
 ];
 
+const gender = [
+  { "name": "Pazu", "gender": "Male"},
+  { "name": "Dola", "gender": "Female"},
+  { "name": "Tatsuo Kusakabe", "gender": "Male"},
+  {"name": "Satsuki Kusakabe", "gender": "Female"}
+];
 
 describe('sortAZ', () => {
   it('is a function', () => {
@@ -82,25 +88,28 @@ describe('filtrar', () => {
     })
   });
 
+  /*describe('computeGender', () =>{
+    const personagens = [
+      { "name": "Satsuki Kusakabe", "gender": "Female"},
+      { "name": "Tatsuo Kusakabe", "gender": "Male"},
+      { "name": "Totoro", "gender": "Male"},
+      { "name": "Pazu", "gender": "Male"},
+    ]
+    it ('is a function', ()=> {
+      expect(typeof computeGender).toBe('function');
+    });
+       it ('returns ``' , () => {
+        const computerPerso = computeGender(personagens)
+        const result = 2
+      expect (computerPerso).toEqual(result)
+      })
+  })*/
 
-/*describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
-*/
+ describe ('computeGender' , () => {
+    it ('its a function', () => {
+      expect (typeof computeGender).toBe('function');
+    });
+    it('retornar porcentagem', () => {
+      expect(computeGender(gender,'Female')).toBe(2);
+    });
+  })

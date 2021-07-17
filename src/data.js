@@ -18,8 +18,9 @@ export const filtrarAnimal = (arr, key, value) =>
   arr.filter((item) => item[key] !== value);
 
 export const computeGender = (gender, people) => {
-  return Math.round(gender.length * 100 / people.length)
+  return Math.round((gender.length / people.length) * 100);
 }
+
 
 export const filterMovies = (data, search) => data.filter(item => item.title.toUpperCase().includes(search.toUpperCase()))
 
