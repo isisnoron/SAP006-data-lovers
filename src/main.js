@@ -95,13 +95,6 @@ function filterCharacter(f) {
 }
 document.getElementById("genero").addEventListener("change", filterCharacter);
 
-/*const btnMobile = document.getElementById("btn-mobile");
-function toggleMenu() {
-  const nav = document.getElementById("nav");
-  nav.classList.toggle("active")
-}
-btnMobile.addEventListener('click', toggleMenu);*/
-
 // filtro barra de pesquisa das animações
 let search = document.getElementById("search");
 search.addEventListener("keyup", function () {
@@ -109,3 +102,10 @@ search.addEventListener("keyup", function () {
   printMovies(movieSelected)
 })
 
+
+const btnMobile = document.getElementById("btn-mobile");
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active")
+}
+btnMobile.addEventListener('click', toggleMenu);

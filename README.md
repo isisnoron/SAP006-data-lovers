@@ -2,7 +2,7 @@
 
 ## Índice
 
-Aplicação web que permite ao usuário visualizar dados e informações descritivas, podendo ordena-los, filtra-los e obter um determinado cálculo agregado. Produzido por Isis Ribeiro e Mayara Bezerra, no segundo projeto do `bootcamp` da **Laboratória**.
+Aplicação web que permite ao usuário visualizar dados e informações descritivas, podendo ordena-los, filtra-los e obter um determinado cálculo agregado. Produzido por Isis Ribeiro e Mayara Bezerra, no segundo projeto do _bootcamp_ da **Laboratória**.
 
 - [1. Sobre o projeto](#1-sobre-o-projeto)
 - [2. Histórias de Usuários](#2-histórias-de-usuários)
@@ -19,47 +19,63 @@ Studio Ghibli é um estúdio japonês de animação, muito conhecido por seus fi
 
 Desenvolvido a partir de um data set que possui informações relevantes sobre as animações, como pontuações, diretores, produtores, resumos, bem como personagens e características de cada um deles, nossa interface possibilita ao usuário visualizar todos esses dados de maneira simples e prática.
 
-Histórias de usuários foram planejadas de acordo com essa [pesquisa](https://github.com/isisnoron/SAP006-data-lovers/blob/main/src/data/ghibli/README.md), e testes de usabilidade com usuários que se encaixam na referida pesquisa.
-
-O layout foi planejado de forma que facilitasse o acesso ao usuário, com cores que remetem ao Studio Ghibli.
+Histórias de usuários foram planejadas de acordo com essa [pesquisa](https://github.com/isisnoron/SAP006-data-lovers/blob/main/src/data/ghibli/README.md), e os testes de usabilidade com fãs do Studio Ghibli. Ademais, o layout foi planejado de forma que facilitasse o acesso do usuário, com cores que remetem ao Studio Ghibli.
 
 ## 2. Histórias de Usuários
 
-Ao analisar a `[pesquisa]` (https://github.com/isisnoron/SAP006-data-lovers/blob/main/src/data/ghibli/README.md), os usuários foram divididos em dois setores.
-A primeira história é sobre o usuário que possui pouco conhecimento das animações do Studio Ghibli, e precisa de um site que facilite o acesso a elas. As informações relevantes de que necessita são: foto da animação, título, resumo, ano de lançamento, produtor e diretor. 
-Definição de pronto: o usuário precisa ver todas as animações na tela inicial através de `cards`, encontrar as informações relevantes junto das animações, ter acesso a todos os personagens, suas características, e em qual animação aparecem. 
+Ao analisar a [pesquisa] (https://github.com/isisnoron/SAP006-data-lovers/blob/main/src/data/ghibli/README.md), os usuários foram divididos em dois setores.
+
+A primeira história é sobre o usuário que possui pouco conhecimento das animações do Studio Ghibli, e precisa de um site que facilite o acesso a elas. As informações relevantes de que necessita são: foto da animação, título, resumo, ano de lançamento, produtor e diretor.
+
+Definição de pronto: o usuário precisa ver todas as animações na tela inicial através de _cards_, encontrar as informações relevantes junto das animações, ter acesso a todos os personagens, suas características, e em qual animação aparecem.
+
 A segunda história é sobre o usuário que deseja ordenar as animações de A-Z e Z-A, ver na tela todos os personagens, filtra-los de acordo com o gênero feminino e masculino, e saber a porcentagem de cada.
-Definição de pronto: o usuário precisa escolher como quer ordenar as animações (A-Z ou Z-A) através de um `select`, bem como poder filtrar os personagens a partir de um `select`, podendo escolher entre feminino, masculino e outros personagens, já obtendo um cálculo da porcentagem que cada opção representa em relação a todas as animações. 
+
+Definição de pronto: o usuário precisa escolher como quer ordenar as animações (A-Z ou Z-A) através de um _select_, bem como poder filtrar os personagens a partir de um _select_, podendo escolher entre feminino, masculino e outros personagens, já obtendo um cálculo da porcentagem que cada opção representa em relação a todas as animações. 
 
 
 ## 3. Interface
 
-No início do projeto desenhamos um protótipo de alta fidelidade, decidindo como seria o layout, a paleta de cores, `cards` e as opções de botões. Seguimos com a mesma ideia do protótipo até o final do projeto, deixando-a responsiva para celular, tablets e notebooks. 
+No início do projeto desenhamos um protótipo de alta fidelidade, decidindo como seria o layout, a paleta de cores, _cards_ e as opções de botões. Seguimos com a mesma ideia do protótipo até o final do projeto, deixando-a responsiva para celular, tablets e notebooks. 
 
-`imagem`
+ 
+<img src="src/img/prototipo2.png">
+
 
 A barra inicial contém a logo do Studio Ghibli. Nela, fizemos alteração da cor preta para a branca. Também temos as opções “Início” e “Sobre”.
-As animações aparecem na página inicial, divididas por `cards` de 2 faces. No desktop, ao passar o mouse por cima do `card`, ele rotaciona. O mesmo acontece ao usuário que utiliza o site pelo celular, ao clicar em cima do card. 
-A parte da frente do `card` mostra a imagem da animação, título e ano de lançamento. Na parte de trás, aparecem as informações de pontuação, diretor, produtor e descrição da animação.
-A definição da paleta de cores foi baseada na animação ` “Spirited Away” `, com cores agradáveis e leves, remetendo ao Studio Ghibli. 
 
-`imagem paleta de cor`
+As animações aparecem na página inicial, divididas por _cards_ de 2 faces. No desktop, ao passar o mouse por cima do _card_, ele rotaciona. O mesmo acontece ao usuário que utiliza o site pelo celular, ao clicar em cima do card.
 
-As cores mais utilizadas na página de início foram azul e rosa. As demais foram utilizadas na página “Sobre”.
+A parte da frente do _card_ mostra a imagem da animação, título e ano de lançamento. Na parte de trás, aparecem as informações de pontuação, diretor, produtor e descrição da animação.
+
+A definição da paleta de cores foi baseada na animação _“Spirited Away”_ , com cores agradáveis e leves, remetendo ao Studio Ghibli. As cores mais utilizadas na página de início foram azul e rosa. As demais foram utilizadas na página “Sobre”.
+
+<img src="src/img/paleta.jpg">
+
 
 ## Projeto Final
 
-Home (possui todas as animações)
+**Home**
+
+<img src="src/img/iniciosfooter.gif">
 
 
-Página dos personagens com calculo agregado 
+
+**Página dos personagens** 
+_Com filtro para personagens femininos e cálculo agregado_
+
+
+<img src="src/img/personagens.png">
 
 
 
 ## 4. Testes de usabilidade
 
-Durante o teste de usabilidade, na página inicial o usuário clicou nos `cards` esperando que o mesmo aumentasse, ou que fosse direcionado para outra tela para ver informações sobre as animações. Isso foi sanado com a rotação do `card`, pois ao passar o mouse por cima do mesmo, ele rotaciona mostrando a parte de trás, onde contém as informações das animações.
+Durante o teste de usabilidade, na página inicial o usuário clicou no _card_ de animação, esperando que o mesmo aumentasse, ou que fosse direcionado para outra tela para ver informações sobre as animações. Isso foi sanado com a rotação do _card_, pois ao passar o mouse por cima do mesmo, ele rotaciona mostrando a parte de trás, onde contém as informações das animações.
+
 O usuário clicou no botão “Sobre” e desceu a página para ler todas as informações. Porém, para voltar ao início, o usuário clicou na logo do Studio Ghibli. Colocamos na barra inicial o botão de “Início” para sanar o problema. 
+
+Além disso, na página dos personagens, o usuário disse ter interesse em saber qual em qual animação cada personagem aparece. Desta forma, acrescentamos na parte de trás dos _cards_ o nome do filme que cada personagem aparece.
 
 
 ## 5. Conteúdo de Aprendizagem
