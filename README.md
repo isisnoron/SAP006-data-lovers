@@ -61,8 +61,8 @@ A definição da paleta de cores foi baseada na animação _“Spirited Away”_
 
 <img src="src/img/iniciosfooter.gif">
 
-<br>
-<br>
+<br> </br>
+<br> </br>
 **Página dos personagens** 
 
 _Com filtro para personagens masculinos e cálculo agregado_
