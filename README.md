@@ -23,7 +23,7 @@ Histórias de usuários foram planejadas de acordo com essa [pesquisa](https://g
 
 ## 2. Histórias de Usuários
 
-Ao analisar a [pesquisa] (https://github.com/isisnoron/SAP006-data-lovers/blob/main/src/data/ghibli/README.md), os usuários foram divididos em dois setores.
+Ao analisar a [pesquisa](https://github.com/isisnoron/SAP006-data-lovers/blob/main/src/data/ghibli/README.md), os usuários foram divididos em dois setores.
 
 A primeira história é sobre o usuário que possui pouco conhecimento das animações do Studio Ghibli, e precisa de um site que facilite o acesso a elas. As informações relevantes de que necessita são: foto da animação, título, resumo, ano de lançamento, produtor e diretor.
 
@@ -37,7 +37,6 @@ Definição de pronto: o usuário precisa escolher como quer ordenar as animaç�
 ## 3. Interface
 
 No início do projeto desenhamos um protótipo de alta fidelidade, decidindo como seria o layout, a paleta de cores, _cards_ e as opções de botões. Seguimos com a mesma ideia do protótipo até o final do projeto, deixando-a responsiva para celular, tablets e notebooks. 
-
  
 <img src="src/img/prototipo2.png">
 
@@ -58,16 +57,19 @@ A definição da paleta de cores foi baseada na animação _“Spirited Away”_
 
 **Home**
 
+
 <img src="src/img/iniciosfooter.gif">
 
 
 
-**Página dos personagens** 
 
-_Com filtro para personagens femininos e cálculo agregado_
+
+**Página dos personagens** 
+_Com filtro para personagens masculinos e cálculo agregado_
 
 
 <img src="src/img/personagens.png">
+
 
 
 
