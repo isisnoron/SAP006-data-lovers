@@ -40,7 +40,6 @@ No início do projeto desenhamos um protótipo de alta fidelidade, decidindo com
  
 <img src="src/img/prototipo2.png">
 
-
 A barra inicial contém a logo do Studio Ghibli. Nela, fizemos alteração da cor preta para a branca. Também temos as opções “Início” e “Sobre”.
 
 As animações aparecem na página inicial, divididas por _cards_ de 2 faces. No desktop, ao passar o mouse por cima do _card_, ele rotaciona. O mesmo acontece ao usuário que utiliza o site pelo celular, ao clicar em cima do card.
@@ -59,8 +58,6 @@ A definição da paleta de cores foi baseada na animação _“Spirited Away”_
 
 
 <img src="src/img/iniciosfooter.gif">
-
-
 
 
 
