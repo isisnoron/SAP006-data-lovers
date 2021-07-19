@@ -64,6 +64,8 @@ A definição da paleta de cores foi baseada na animação _“Spirited Away”_
 
  
 
+ 
+
 
 **Página dos personagens** 
 
