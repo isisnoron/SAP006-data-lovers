@@ -36,23 +36,25 @@ Definição de pronto: o usuário precisa escolher como quer ordenar as animaç�
 
 No início do projeto desenhamos um protótipo de alta fidelidade, decidindo como seria o layout, a paleta de cores, `cards` e as opções de botões. Seguimos com a mesma ideia do protótipo até o final do projeto, deixando-a responsiva para celular, tablets e notebooks. 
 
-`imagem`
+![prototipo-interface](https://github.com/isisnoron/SAP006-data-lovers/blob/main/prototipo2.png)
 
 A barra inicial contém a logo do Studio Ghibli. Nela, fizemos alteração da cor preta para a branca. Também temos as opções “Início” e “Sobre”.
 As animações aparecem na página inicial, divididas por `cards` de 2 faces. No desktop, ao passar o mouse por cima do `card`, ele rotaciona. O mesmo acontece ao usuário que utiliza o site pelo celular, ao clicar em cima do card. 
 A parte da frente do `card` mostra a imagem da animação, título e ano de lançamento. Na parte de trás, aparecem as informações de pontuação, diretor, produtor e descrição da animação.
 A definição da paleta de cores foi baseada na animação ` “Spirited Away” `, com cores agradáveis e leves, remetendo ao Studio Ghibli. 
 
-`imagem paleta de cor`
+![paleta de cores](https://github.com/isisnoron/SAP006-data-lovers/blob/main/paleta.jpg)
 
 As cores mais utilizadas na página de início foram azul e rosa. As demais foram utilizadas na página “Sobre”.
 
 ## Projeto Final
 
-Home (possui todas as animações)
+![](https://github.com/isisnoron/SAP006-data-lovers/blob/main/iniciosfooter.gif)
+                  Home (possui todas as animações)
 
 
-Página dos personagens com calculo agregado 
+![](https://github.com/isisnoron/SAP006-data-lovers/blob/main/perso.gif)
+                 Página dos personagens com calculo agregado 
 
 
 
