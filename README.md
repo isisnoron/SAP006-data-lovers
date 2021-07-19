@@ -53,7 +53,7 @@ As cores mais utilizadas na página de início foram azul e rosa. As demais fora
                   Home (possui todas as animações)
 
 
-![](https://github.com/isisnoron/SAP006-data-lovers/blob/main/perso.gif)
+![](https://github.com/isisnoron/SAP006-data-lovers/blob/main/src/img/princesa%20mononoke.jpeg)
                  Página dos personagens com calculo agregado 
 
 
