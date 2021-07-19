@@ -315,7 +315,7 @@ footer a {
     text-align: justify;
     line-height: 25px;
     height: 300%;
-    
+
 } 
 .text-charac{
     padding-top: 15px;
@@ -329,6 +329,7 @@ footer a {
     font-size: 13px;
 }
 
+
 .searchAnimations {
     width: 220px;
     height: 30px;
@@ -341,3 +342,4 @@ footer a {
     margin-top: 18px;
     outline: none;  
 }
+

@@ -68,6 +68,7 @@ function printCharacters(perso) {
               <strong>Gender: </strong>${data.gender}<br>
               <strong>Specie: </strong>${data.specie}<br>
               <strong>Movie: </strong>${data.movie}
+
           </ul>
         </figure> 
       </div>    
@@ -94,6 +95,7 @@ function filterCharacter(f) {
   }
 }
 document.getElementById("genero").addEventListener("change", filterCharacter);
+
 
 // filtro barra de pesquisa das animações
 let search = document.getElementById("search");

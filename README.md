@@ -55,6 +55,7 @@ A definição da paleta de cores foi baseada na animação _“Spirited Away”_
 
 ## Projeto Final
 
+
 **Home**
 
 <img src="src/img/iniciosfooter.gif">
@@ -62,6 +63,7 @@ A definição da paleta de cores foi baseada na animação _“Spirited Away”_
 
 
 **Página dos personagens** 
+
 _Com filtro para personagens femininos e cálculo agregado_
 
 
