@@ -61,7 +61,7 @@ A definição da paleta de cores foi baseada na animação _“Spirited Away”_
 
 <img src="src/img/iniciosfooter.gif">
 
-<br> </br>
+
 <br> </br>
 **Página dos personagens** 
 
@@ -74,6 +74,7 @@ _Com filtro para personagens masculinos e cálculo agregado_
 
 
 
+<br> </br>
 ## 4. Testes de usabilidade
 
 Durante o teste de usabilidade, na página inicial o usuário clicou no _card_ de animação, esperando que o mesmo aumentasse, ou que fosse direcionado para outra tela para ver informações sobre as animações. Isso foi sanado com a rotação do _card_, pois ao passar o mouse por cima do mesmo, ele rotaciona mostrando a parte de trás, onde contém as informações das animações.
