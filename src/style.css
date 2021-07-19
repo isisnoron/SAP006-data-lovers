@@ -252,7 +252,8 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
+    /*text-decoration: underline;*/
 }
 
 .contato {
@@ -266,12 +267,13 @@ footer a {
 }
 
 .contato .nome-aluna {
-    text-decoration: underline;
-    font-size: 1.5em;
+  font-size: 1.5em;
+  
 }
 
 .contato-aluna a {
     font-size: 1.3em;
+    color: whitesmoke;
 }
 
 /*cards persoangens e flip*/

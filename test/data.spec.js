@@ -1,4 +1,4 @@
-import { sortAZ, sortZA, filtrar, filtrarAnimal, computeGender } from '../src/data.js';
+import { sortAZ, sortZA, filtrar, filtrarAnimal, computeGender, filterMovies } from '../src/data.js';
 
 
 const films = [
@@ -45,7 +45,6 @@ describe('sortZA', () => {
 
   it('deverá retornar animações em ordem alfabética de Z-A', () => {
     expect(sortZA(films)).toEqual([{ "title": "Spirited Away" }, { "title": "Porco Rosso" }, { "title": "My Neighbor Totoro" }, { "title": "Castle in the Sky" }]);
-    /*expect(sortZA(films)).toEqual([films[3], films[2], films[0], films[1]])*/
   });
 });
 
@@ -75,26 +74,38 @@ describe('filtrar', () => {
   });
 });
 
-  describe('filtrarAnimal', () => {
-    it('is a function', () => {
-      expect(typeof filtrarAnimal).toBe('function');
-    });
-
-    it('deve retornar personagens da espécie diferente de "Human"', () => {
-      expect(filtrarAnimal(characters, "specie", "Human")).toStrictEqual([
-        { "name": "Totoro", "gender": "Male", "specie": "Totoro" },
-        { "name": "Nigihayami Kohakunushi/Haku", "gender": "Male", "specie": "Deity, Dragon" },
-        { "name": "Yubaba", "gender": "Female", "specie": "Witch" }]);
-    })
+describe('filtrarAnimal', () => {
+  it('is a function', () => {
+    expect(typeof filtrarAnimal).toBe('function');
   });
-  
 
-
-  describe ('coputeGender' , () => {
-    it ('its a function', () => {
-      expect (typeof computeGender).toBe('function');
-    });
-    it('retornar porcentagem', () => {
-      expect(computeGender(gender,'Female')).toBe(2);
-    });
+  it('deve retornar personagens da espécie diferente de "Human"', () => {
+    expect(filtrarAnimal(characters, "specie", "Human")).toStrictEqual([
+      { "name": "Totoro", "gender": "Male", "specie": "Totoro" },
+      { "name": "Nigihayami Kohakunushi/Haku", "gender": "Male", "specie": "Deity, Dragon" },
+      { "name": "Yubaba", "gender": "Female", "specie": "Witch" }]);
   })
+});
+
+
+describe('computeGender', () => {
+  it('its a function', () => {
+    expect(typeof computeGender).toBe('function');
+  });
+  it('retornar porcentagem', () => {
+    expect(computeGender(gender, 'Female')).toBe(67);
+  });
+})
+
+
+describe('filterMovies()', () => {
+
+  it('should be a function', () => {
+    expect(typeof filterMovies).toBe('function')
+  });
+
+  it('should return movie by search', () => {
+    expect(filterMovies(films, "Castle in the Sky")).toEqual([{ "title": "Castle in the Sky" }]);
+  });
+
+})
