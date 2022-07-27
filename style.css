@@ -168,6 +168,8 @@
 .card .back{ /*parte de tras e giro no sentido certo*/
     background: #ebad91;
     transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 
@@ -327,6 +329,8 @@ footer a {
     line-height: 15px;
     height: 100%;
     font-size: 13px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 
